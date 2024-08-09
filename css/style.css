@@ -4,12 +4,20 @@
     box-sizing: border-box;
 }
 
+:root {
+    --clr-main-light: hsl(0, 0%, 100%);
+
+    --main-bg-color: hsl(212, 45%, 89%);
+    --text-color-300: hsl(216, 15%, 48%);
+    --text-color-900: hsl(218, 44%, 22%);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 body {
     margin: 0;
     padding:0;
-    background-color: #d5e1ef;
+    background-color: var(--main-bg-color);
     font-family: "Outfit", sans-serif;
 }
 
@@ -37,7 +45,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     border-radius: 1.25rem;
-    background-color: white;
+    background-color: var(--clr-main-light);
 }
 
 .text {
@@ -49,11 +57,13 @@ body {
 h1 {
     font-size: 20px;
     font-weight: 700;
+    color: var(--text-color-900);
 }
 
 p {
     font-size: 15px;
     font-weight: 400;
     line-height: 1.4rem;
+    color: var(--text-color-300);
 }
 
