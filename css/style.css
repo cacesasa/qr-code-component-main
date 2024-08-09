@@ -1,9 +1,11 @@
+/* Browser Reset */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
+/* Custom Properties */
 :root {
     --clr-main-light: hsl(0, 0%, 100%);
 
@@ -11,15 +13,18 @@
     --text-color-300: hsl(216, 15%, 48%);
     --text-color-900: hsl(218, 44%, 22%);
 }
-
+/* Google Fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+/* CSS Reset */
 body {
     margin: 0;
     padding:0;
     background-color: var(--main-bg-color);
     font-family: "Outfit", sans-serif;
 }
+
+/* CSS Styles */
 
 .card img {
     max-width: 288px;
